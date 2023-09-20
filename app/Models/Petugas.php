@@ -8,4 +8,13 @@ use Illuminate\Database\Eloquent\Model;
 class Petugas extends Model
 {
     use HasFactory;
+    public $timestamps = false;
+    protected $table = 'petugass';
+    protected $fillable = [
+        'id',
+        'nama_petugas',
+        'jabatan_petugas',
+        'no_telp_petugas',
+        'alamat_petugas',
+    ];
 }
